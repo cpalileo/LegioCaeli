@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legio Caeli - St. Maria Goretti Youth Group</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --deep-blue: #0f172a;
+            --accent-blue: #1e40af;
+            --emerald: #059669;
+            --light-emerald: #34d399;
+            --highlight: #86efac;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background: linear-gradient(to right, var(--emerald), var(--accent-blue));
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        
+        h1 {
+            margin: 0 auto;
+            font-size: 2.8rem;
+            font-family: 'Architects Daughter', 'Kristen ITC', 'Marker Felt', 'Arial Rounded MT Bold', sans-serif;
+            letter-spacing: 0.2em;
+            transform: scaleX(1.2);
+            width: fit-content;
+            text-align: center;
+        }
+        
+        @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+        
+        .subtitle {
+            color: var(--highlight);
+            font-size: 1.2rem;
+            margin-top: 5px;
+            line-height: 1.6;
+        }
+        
+        .subtitle .highlight {
+            background-color: rgba(15, 23, 42, 0.3);
+            padding: 3px 10px;
+            border-radius: 4px;
+            font-weight: bold;
+            margin-top: 5px;
+            display: inline-block;
+            font-size: 1.3rem;
+            color: white;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+        }
+        
+        .main-content {
+            padding: 20px 0;
+        }
+        
+        .section {
+            margin-bottom: 30px;
+        }
+        
+        h2 {
+            color: var(--deep-blue);
+            border-bottom: 2px solid var(--emerald);
+            padding-bottom: 5px;
+        }
+        
+        .announcement {
+            background-color: #f8f8f8;
+            border-left: 4px solid var(--emerald);
+            padding: 15px;
+            margin-bottom: 15px;
+        }
+        
+        .announcement h3 {
+            margin-top: 0;
+            color: var(--accent-blue);
+        }
+        
+        .event {
+            display: flex;
+            background-color: #f8f8f8;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        
+        .date-box {
+            background-color: var(--accent-blue);
+            color: white;
+            padding: 15px;
+            width: 100px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        
+        .month {
+            font-size: 1rem;
+            text-transform: uppercase;
+        }
+        
+        .day {
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+        
+        .event-details {
+            padding: 15px;
+            flex: 1;
+        }
+        
+        .event h3 {
+            margin-top: 0;
+            color: var(--accent-blue);
+        }
+        
+        .event-meta {
+            font-size: 0.9rem;
+            color: #666;
+            margin-bottom: 5px;
+        }
+        
+        .contact-info {
+            background-color: var(--deep-blue);
+            color: white;
+            padding: 20px;
+            border-radius: 5px;
+            margin-top: 30px;
+        }
+        
+        .contact-info h2 {
+            color: var(--light-emerald);
+            border-bottom: 1px solid var(--light-emerald);
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #f0f0f0;
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 600px) {
+            .event {
+                flex-direction: column;
+            }
+            
+            .date-box {
+                width: auto;
+                padding: 10px;
+            }
+            
+            .month, .day {
+                display: inline;
+                margin-right: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Legio Caeli</h1>
+            <div class="subtitle">St. Maria Goretti Youth Group<br><span class="highlight">Announcements & Upcoming Events</span></div>
+        </div>
+    </header>
+
+    <div class="container main-content">
+        <section class="section">
+            <h2>Important Announcements</h2>
+            
+            <div class="announcement">
+                <h3>Arts Showcase - Coming in May</h3>
+                <p>Looking for parishioners who can sing, dance, do theatre, paint, draw, or write poetry. We'll be displaying art around the hall, while others perform on stage.</p>
+                <p>If interested, fill out a <a href="http://www.smgcc.net/youth" style="color: var(--light-emerald); font-weight: bold;">registration form</a>. Our showcase is scheduled for May.</p>
+            </div>
+            
+            <div class="announcement">
+                <h3>Next Meeting: Anchor Night</h3>
+                <p><strong>When:</strong> Thursday, March 28th, 2025</p>
+                <p>Deepen your faith with other middle schoolers and high schoolers as we discuss topics of the Lenten season.</p>
+            </div>
+            
+            <div class="announcement">
+                <h3>Youth Leading Stations of the Cross</h3>
+                <p><strong>When:</strong> Friday, April 11th, 2025 | 6:00 PM</p>
+                <p>We will need 14 young people to lead the stations. Please arrive by 5:45 to participate and prepare to walk with Christ on the way to pay the ultimate sacrifice for us.</p>
+            </div>
+            
+            <div class="announcement">
+                <h3>Logo Contest Submission Deadline</h3>
+                <p><strong>Deadline:</strong> Wednesday, April 16th, 2025</p>
+                <p>Don't forget to submit your designs for the Legio Caeli logo contest! The winner will be announced at our arts night and showcase.</p>
+                <p>Click <a href="http://www.smgcc.net/youth" style="color: var(--light-emerald); font-weight: bold;">here</a> for contest details.</p>
+            </div>
+                    <div class="event">
+                <div class="date-box">
+                    <div class="month">May</div>
+                    <div class="day">16-17</div>
+                </div>
+                <div class="event-details">
+                    <h3>Arts Showcase</h3>
+                    <div class="event-meta">Date and Time TBD (May 16 or May 17)</div>
+                    <p>Join us for our Arts Showcase featuring artwork displays and live performances by talented parishioners. Final date and details to be announced.</p>
+                </div>
+            </div>
+            
+        </section>
+
+        <section class="section">
+            <h2>Upcoming Events</h2>
+            
+            <div class="event">
+                <div class="date-box">
+                    <div class="month">Mar</div>
+                    <div class="day">28</div>
+                </div>
+                <div class="event-details">
+                    <h3>Anchor Night</h3>
+                    <div class="event-meta">Thursday, 6:30 PM - 8:30 PM | St. Michael and St. Gabriel Room</div>
+                    <p>Deepen your faith with other middle schoolers and high schoolers as we discuss topics of the Lenten season.</p>
+                </div>
+            </div>
+            
+            <div class="event">
+                <div class="date-box">
+                    <div class="month">Apr</div>
+                    <div class="day">4</div>
+                </div>
+                <div class="event-details">
+                    <h3>Planning Meeting</h3>
+                    <div class="event-meta">Friday, 6:30 PM - 8:30 PM | St. Michael Room</div>
+                    <p>Begin with 1st Friday Mass at 6:30 PM followed by our service meeting in the St. Michael Room at 7:30 PM. Agenda: 4th week gathering for April, Arts Night in May, June scheduling.</p>
+                </div>
+            </div>
+            
+            <div class="event">
+                <div class="date-box">
+                    <div class="month">Apr</div>
+                    <div class="day">11</div>
+                </div>
+                <div class="event-details">
+                    <h3>Stations of the Cross &amp; Anchor Meeting</h3>
+                    <div class="event-meta">Friday, 6:00 PM - 8:30 PM | Church and St. Michael Room</div>
+                    <p>We'll begin the evening by leading stations of the cross at 6:00 PM SHARP in the Church. Our anchor meeting will follow afterwards.</p>
+                </div>
+            </div>
+            
+            <div class="event">
+                <div class="date-box">
+                    <div class="month">Apr</div>
+                    <div class="day">18</div>
+                </div>
+                <div class="event-details">
+                    <h3>Good Friday - No Meeting</h3>
+                    <div class="event-meta">Friday</div>
+                    <p>Good Friday - No Legio Caeli gathering today.</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="contact-info">
+            <h2>Contact Information</h2>
+            <p><strong>Christopher Palileo</strong> - Youth Ministry Coordinator</p>
+            <p><strong>Email:</strong> youth@smgcc.net</p>
+            <p><strong>Phone:</strong> (916) 647-4538</p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>"How good and pleasant it is when God's people live together in unity!" - Psalm 133:1</p>
+            <p>&copy; 2025 St. Maria Goretti Youth Group. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
