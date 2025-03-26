@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legio Caeli Logo Competition</title>
+    <style>
+        :root {
+            --deep-blue: #0f172a;
+            --accent-blue: #1e40af;
+            --emerald: #059669;
+            --light-emerald: #34d399;
+            --highlight: #86efac;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #f9fafb;
+            color: var(--deep-blue);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0;
+            background-color: white;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        header {
+            background: linear-gradient(to right, var(--emerald), var(--accent-blue));
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .bg-accent {
+            position: absolute;
+            opacity: 0.1;
+            z-index: 1;
+        }
+
+        .bg-circle-1 {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            background-color: white;
+            top: -100px;
+            right: -100px;
+        }
+
+        .bg-circle-2 {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background-color: white;
+            bottom: -100px;
+            left: -50px;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: var(--highlight);
+            margin-bottom: 20px;
+        }
+
+        .deadline-banner {
+            background-color: rgba(15, 23, 42, 0.7);
+            display: inline-block;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .circle-example {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background: radial-gradient(circle, var(--light-emerald), var(--emerald));
+            border: 4px solid white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+            font-size: 1.2rem;
+            margin: 30px auto 10px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .main-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            padding: 30px;
+        }
+
+        @media (max-width: 768px) {
+            .main-content {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            color: var(--emerald);
+            margin-bottom: 15px;
+            border-bottom: 2px solid var(--light-emerald);
+            padding-bottom: 5px;
+            font-size: 1.5rem;
+        }
+
+        ul {
+            list-style-type: none;
+            margin-left: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+            padding-left: 25px;
+            position: relative;
+        }
+
+        li::before {
+            content: "•";
+            color: var(--emerald);
+            font-weight: bold;
+            font-size: 1.5rem;
+            position: absolute;
+            left: 5px;
+            top: -5px;
+        }
+
+        .suggestion-box {
+            background-color: #f0f9ff;
+            border-left: 4px solid var(--accent-blue);
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 0 5px 5px 0;
+        }
+
+        .suggestion-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .icon {
+            margin-right: 10px;
+            font-size: 1.2rem;
+        }
+
+        .contact-box {
+            grid-column: span 2;
+            background-color: var(--deep-blue);
+            color: white;
+            padding: 20px;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        @media (max-width: 768px) {
+            .contact-box {
+                grid-column: span 1;
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .contact-text {
+                margin-bottom: 15px;
+            }
+        }
+
+        .contact-text h3 {
+            color: var(--light-emerald);
+            margin-bottom: 5px;
+        }
+
+        .contact-button {
+            background-color: var(--emerald);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .contact-button:hover {
+            background-color: var(--light-emerald);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #f0f0f0;
+            color: #666;
+        }
+
+        .bible-verse {
+            font-style: italic;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="bg-accent bg-circle-1"></div>
+            <div class="bg-accent bg-circle-2"></div>
+            <div class="header-content">
+                <h1>LEGIO CAELI YOUTH GROUP</h1>
+                <div class="subtitle">St. Maria Goretti Parish</div>
+                <div class="deadline-banner">LOGO COMPETITION - DEADLINE: APRIL 16, 2025</div>
+            </div>
+        </header>
+
+        <div class="circle-example">
+            Your Logo Here
+        </div>
+
+        <div class="main-content">
+            <div class="section">
+                <h2>Rules & Contest Details</h2>
+                <ul>
+                    <li>Each participant may submit up to 3 entries</li>
+                    <li>All entries will be judged anonymously by Fr. Sylvester</li>
+                    <li>Winner will be announced at our arts night and showcase on Saturday, May 17</li>
+                </ul>
+
+                <h2>Logo Requirements</h2>
+                <ul>
+                    <li>Must fit within a circular frame</li>
+                    <li>Must include color (not black and white only)</li>
+                    <li>Must include the name "Legio Caeli" (Legion of Heaven)</li>
+                    <li>Must incorporate a callback or reference to St. Maria Goretti</li>
+                    <li>The logo must incorporate green or a related shade, as it serves as the youth group's primary color</li>
+                </ul>
+
+                <h2>Judging Criteria</h2>
+                <ul>
+                    <li>Creativity and originality</li>
+                    <li>Visual appeal and aesthetic quality</li>
+                    <li>Clear representation of "Legio Caeli" concept</li>
+                    <li>Meaningful incorporation of elements or symbolism to St. Maria Goretti</li>
+                    <li>Effective use of green or derivatives of green as the primary color</li>
+                    <li>Legibility and clarity at different sizes</li>
+                    <li>Relevance to Catholic youth ministry</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>Submission Guidelines</h2>
+                <ul>
+                    <li>Accepted file formats: JPG, PNG, or PDF</li>
+                    <li>Minimum resolution: 300 dpi (higher resolutions welcome)</li>
+                    <li>Can be created via digital art (e.g., Procreate, Photoshop) or traditional media (paint, ink, etc.) that is scanned or photographed</li>
+                    <li>Each entry must be submitted with a brief explanation (max 100 words) describing the symbolism and design choices</li>
+                    <li>Email submissions to youth@smgcc.net with subject line "Logo Contest: [Your Name]"</li>
+                    <li>Include your name, age, and contact information in the email body, not on the artwork</li>
+                </ul>
+
+                <h2>Additional Information</h2>
+                <ul>
+                    <li>The winning logo will become the official emblem of Legio Caeli Youth Group</li>
+                    <li>The winner will receive recognition in the parish bulletin and on social media</li>
+                    <li>By submitting, you grant St. Maria Goretti Parish permission to use, modify, and reproduce the logo</li>
+                    <li>Designs must be original work and not infringe on any copyrights</li>
+                </ul>
+
+                <div class="suggestion-box">
+                    <h2>Design Suggestions</h2>
+                    <h3>St. Maria Goretti Symbols:</h3>
+                    <div class="suggestion-item">
+                        <span class="icon">✿</span> Lilies (representing purity)
+                    </div>
+                    <div class="suggestion-item">
+                        <span class="icon">★</span> Stars ("stella maris" - star of the sea)
+                    </div>
+                    <div class="suggestion-item">
+                        <span class="icon">🌾</span> Farming implements (her background)
+                    </div>
+                    <div class="suggestion-item">
+                        <span class="icon">👑</span> Halo or crown (symbolizing sainthood)
+                    </div>
+                    <ul>
+                        <li>Imagery should convey "Legion of Heaven" in a positive, empowering way</li>
+                        <li>Design should work well on t-shirts, social media, and printed materials</li>
+                        <li>Consider how the logo will look in both color and grayscale formats</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="contact-box">
+                <div class="contact-text">
+                    <h3>Questions?</h3>
+                    <p>Contact Christopher Palileo at youth@smgcc.net or (916) 647-4538</p>
+                </div>
+                <a href="mailto:youth@smgcc.net?subject=Logo Contest Question" class="contact-button">Email Us</a>
+            </div>
+        </div>
+
+        <footer>
+            <div class="bible-verse">"For the creation waits with eager longing for the revealing of the children of God." Romans 8:19</div>
+            <div>© 2025 St. Maria Goretti Parish Youth Ministry</div>
+            <div style="margin-top: 15px;"><a href="https://cpalileo.github.io/LegioCaeli/events.html" style="color: var(--accent-blue); text-decoration: none; font-weight: bold;">← Back to Events Page</a></div>
+        </footer>
+    </div>
+</body>
+</html>
