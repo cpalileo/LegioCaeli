@@ -192,29 +192,100 @@
         <section class="section">
             <h2>Important Announcements</h2>
             
-            <div class="announcement">
-                <h3>Arts Showcase - Coming in May</h3>
-                <p>Looking for parishioners who can sing, dance, do theatre, paint, draw, or write poetry. We'll be displaying art around the hall, while others perform on stage.</p>
-                <p>If interested, fill out a <a href="https://forms.gle/Rt57UqFiVRPDDmSm6" style="color: var(--light-emerald); font-weight: bold;">registration form</a>. Our showcase is scheduled for May.</p>
-            </div>
+            <style>
+                .announcements-grid {
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                    gap: 15px;
+                    margin-bottom: 20px;
+                }
+                
+                .announcement-card {
+                    background-color: #f8f8f8;
+                    border-top: 4px solid var(--emerald);
+                    border-radius: 5px;
+                    padding: 15px;
+                    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                }
+                
+                .announcement-card h3 {
+                    margin-top: 0;
+                    color: var(--accent-blue);
+                    font-size: 1.1rem;
+                    border-bottom: 1px solid #e5e5e5;
+                    padding-bottom: 8px;
+                    margin-bottom: 10px;
+                }
+                
+                .announcement-card .date {
+                    font-weight: bold;
+                    margin-bottom: 8px;
+                    color: var(--deep-blue);
+                }
+                
+                .announcement-card .content {
+                    font-size: 0.9rem;
+                    flex-grow: 1;
+                }
+                
+                .announcement-card .link {
+                    margin-top: 10px;
+                }
+                
+                @media (max-width: 768px) {
+                    .announcements-grid {
+                        grid-template-columns: repeat(2, 1fr);
+                    }
+                }
+                
+                @media (max-width: 500px) {
+                    .announcements-grid {
+                        grid-template-columns: 1fr;
+                    }
+                }
+            </style>
             
-            <div class="announcement">
-                <h3>Youth Leading Stations of the Cross</h3>
-                <p><strong>When:</strong> Friday, April 11th, 2025 | 6:00 PM</p>
-                <p>We will need 14 young people to lead the stations. Please arrive by 5:45 to participate and prepare to walk with Christ on the way to pay the ultimate sacrifice for us.</p>
-            </div>
-            
-            <div class="announcement">
-                <h3>Logo Contest Submission Deadline</h3>
-                <p><strong>Deadline:</strong> Wednesday, April 16th, 2025</p>
-                <p>Don't forget to submit your designs for the Legio Caeli logo contest! The winner will be announced at our arts night and showcase.</p>
-                <p>Click <a href="https://cpalileo.github.io/LegioCaeli/contestrules.html" style="color: var(--light-emerald); font-weight: bold;">here</a> for contest details.</p>
-            </div>
-            
-            <div class="announcement">
-                <h3>Baccalaureate Mass - Save the Date</h3>
-                <p><strong>When:</strong> Saturday, June 7th, 2025 | Time TBD</p>
-                <p>Join us as we celebrate and honor our graduating seniors with a special Baccalaureate Mass. More details to follow.</p>
+            <div class="announcements-grid">
+                <div class="announcement-card">
+                    <h3>Arts Showcase - Coming in May</h3>
+                    <div class="date">May 16 or 17, 2025</div>
+                    <div class="content">
+                        <p>Looking for parishioners who can sing, dance, do theatre, paint, draw, or write poetry. We'll be displaying art around the hall, while others perform on stage.</p>
+                    </div>
+                    <div class="link">
+                        <a href="https://forms.gle/Rt57UqFiVRPDDmSm6" style="color: var(--light-emerald); font-weight: bold;">Registration form →</a>
+                    </div>
+                </div>
+                
+                <div class="announcement-card">
+                    <h3>Youth Leading Stations of the Cross</h3>
+                    <div class="date">Friday, April 11th, 2025 | 6:00 PM</div>
+                    <div class="content">
+                        <p>We will need 14 young people to lead the stations. Please arrive by 5:45 to participate and prepare to walk with Christ on the way to pay the ultimate sacrifice for us.</p>
+                    </div>
+                </div>
+                
+                <div class="announcement-card">
+                    <h3>Logo Contest Submission Deadline</h3>
+                    <div class="date">Wednesday, April 16th, 2025</div>
+                    <div class="content">
+                        <p>Don't forget to submit your designs for the Legio Caeli logo contest! The winner will be announced at our arts night and showcase.</p>
+                    </div>
+                    <div class="link">
+                        <a href="https://cpalileo.github.io/LegioCaeli/contestrules.html" style="color: var(--light-emerald); font-weight: bold;">Contest details →</a>
+                    </div>
+                </div>
+                
+                <div class="announcement-card">
+                    <h3>Baccalaureate Mass - Save the Date</h3>
+                    <div class="date">Saturday, June 7th, 2025 | Time TBD</div>
+                    <div class="content">
+                        <p>Join us as we celebrate and honor our graduating seniors with a special Baccalaureate Mass. More details to follow.</p>
+                    </div>
+                </div>
             </div>
         </section>
 
