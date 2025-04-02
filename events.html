@@ -195,9 +195,9 @@
             <style>
                 .announcements-grid {
                     display: grid;
-                    grid-template-columns: repeat(3, 1fr);
+                    grid-template-columns: repeat(4, 1fr);
                     gap: 15px;
-                    margin-bottom: 20px;
+                    margin-bottom: 30px;
                 }
                 
                 .announcement-card {
@@ -209,6 +209,7 @@
                     height: 100%;
                     display: flex;
                     flex-direction: column;
+                    margin-bottom: 15px;
                 }
                 
                 .announcement-card h3 {
@@ -233,6 +234,12 @@
                 
                 .announcement-card .link {
                     margin-top: 10px;
+                }
+                
+                @media (max-width: 992px) {
+                    .announcements-grid {
+                        grid-template-columns: repeat(3, 1fr);
+                    }
                 }
                 
                 @media (max-width: 768px) {
@@ -281,7 +288,7 @@
                 
                 <div class="announcement-card">
                     <h3>Baccalaureate Mass - Save the Date</h3>
-                    <div class="date">Saturday, June 7th, 2025 | Time TBD</div>
+                    <div class="date">Tentatively Saturday, June 7th, 2025 | Time TBD</div>
                     <div class="content">
                         <p>Join us as we celebrate and honor our graduating seniors with a special Baccalaureate Mass. More details to follow.</p>
                     </div>
@@ -290,7 +297,7 @@
         </section>
 
         <section class="section">
-            <h2>Upcoming Events</h2>
+            <h2>All Upcoming Events</h2>
             
             <div class="event">
                 <div class="date-box">
@@ -298,7 +305,7 @@
                     <div class="day">4</div>
                 </div>
                 <div class="event-details">
-                    <h3>Planning Meeting</h3>
+                    <h3>Servants' Team Planning Meeting</h3>
                     <div class="event-meta">Friday, 6:30 PM - 8:30 PM | St. Michael Room</div>
                     <p>Begin with 1st Friday Mass at 6:30 PM followed by our service meeting in the St. Michael Room at 7:30 PM. Agenda: 4th week gathering for April, Arts Night in May, June scheduling.</p>
                 </div>
@@ -324,7 +331,7 @@
                 <div class="event-details">
                     <h3>Good Friday - No Meeting</h3>
                     <div class="event-meta">Friday</div>
-                    <p>Good Friday - No Legio Caeli gathering today.</p>
+                    <p>Good Friday - No Legio Caeli gathering today. Please see bulletin or MyParish App for Good Friday Services.</p>
                 </div>
             </div>
 
@@ -347,7 +354,7 @@
                 </div>
                 <div class="event-details">
                     <h3>Baccalaureate Mass</h3>
-                    <div class="event-meta">Saturday, Time TBD | Church</div>
+                    <div class="event-meta">Tentatively Saturday, Time TBD | Church</div>
                     <p>Special Mass to celebrate and honor our graduating seniors. All parish members are invited to attend and support our youth as they mark this important milestone.</p>
                 </div>
             </div>
